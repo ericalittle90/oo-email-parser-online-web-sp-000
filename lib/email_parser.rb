@@ -12,7 +12,7 @@ attr_accessor :emails
   end
 
   def parse
-    @emails.split(/,||\s/).strip.uniq!
+    @emails.split(/\s|,/).strip.uniq!
   end
 
 end
