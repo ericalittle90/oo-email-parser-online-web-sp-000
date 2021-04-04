@@ -5,14 +5,14 @@
 
 class EmailAddressParser
 
-attr_accessor :emails
+attr_accessor :email
 
   def initialize(email)
-    @emails = email
+    @email = email
   end
 
   def parse
-    @emails.split(/\s|,/).uniq!
+    @email.split(/\s|,/).uniq!
   end
 
 end
