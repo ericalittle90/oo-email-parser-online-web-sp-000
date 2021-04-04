@@ -7,6 +7,8 @@ class EmailAddressParser
 
 attr_accessor :emails
 
-
+  def parse
+    @@emails.split(" ", ",").strip.uniq!
+  end
 
 end
